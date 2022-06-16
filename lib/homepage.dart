@@ -263,6 +263,125 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    width: size.width * 4 / 10,
+                    margin: EdgeInsets.only(left: 20, right: 16),
+                    child: Column(
+                      children: [
+                        Image.network("https://picsum.photos/id/1020/4288/2848"),
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Macbook",
+                                style: TextStyle(
+                                    color: textColor,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                              Text(
+                                "USD 200",
+                                style: TextStyle(
+                                  color: anotherColor,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 1),
+                    ),
+                  ),
+                  Container(
+                    width: size.width * 4 / 10,
+                    margin: EdgeInsets.only(left: 20, right: 16),
+                    child: Column(
+                      children: [
+                        Image.network("https://picsum.photos/id/0/5616/3744"),
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Macbook",
+                                style: TextStyle(
+                                    color: textColor,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                              Text(
+                                "USD 200",
+                                style: TextStyle(
+                                  color: anotherColor,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 1),
+                    ),
+                  ),
+                  Container(
+                    width: size.width * 4 / 10,
+                    margin: EdgeInsets.only(left: 20, right: 16),
+                    child: Column(
+                      children: [
+                        Image.network("https://picsum.photos/id/0/5616/3744"),
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Macbook",
+                                style: TextStyle(
+                                    color: textColor,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                              Text(
+                                "USD 200",
+                                style: TextStyle(
+                                  color: anotherColor,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 1),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 20),
           ],
         ),
       ),
