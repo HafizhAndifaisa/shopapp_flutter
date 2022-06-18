@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/browsepage.dart';
 import 'constant.dart';
 
 class HomePage extends StatelessWidget {
@@ -112,12 +113,24 @@ class HomePage extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
-                  Text(
-                    "see more",
-                    style: TextStyle(
-                      color: textColorSmall,
-                      fontSize: 14,
+                  InkWell(
+                    child: Text(
+                      "see more",
+                      style: TextStyle(
+                        color: textColorSmall,
+                        fontSize: 14,
+                      ),
                     ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return browsepage("Today's Item");
+                          },
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
@@ -126,116 +139,23 @@ class HomePage extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Container(
-                    width: size.width * 4 / 10,
-                    margin: EdgeInsets.only(left: 20, right: 16),
-                    child: Column(
-                      children: [
-                        Image.network("https://picsum.photos/id/1020/4288/2848"),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Macbook",
-                                style: TextStyle(
-                                    color: textColor,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
-                              ),
-                              Text(
-                                "USD 200",
-                                style: TextStyle(
-                                  color: anotherColor,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1),
-                    ),
+                  ItemCard(
+                    size: size.width * 4 / 10,
+                    linkphoto: "https://picsum.photos/id/1020/4288/2848",
+                    titletext: "Kuma Photograph",
+                    price: "USD 200",
                   ),
-                  Container(
-                    width: size.width * 4 / 10,
-                    margin: EdgeInsets.only(left: 20, right: 16),
-                    child: Column(
-                      children: [
-                        Image.network("https://picsum.photos/id/0/5616/3744"),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Macbook",
-                                style: TextStyle(
-                                    color: textColor,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
-                              ),
-                              Text(
-                                "USD 200",
-                                style: TextStyle(
-                                  color: anotherColor,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1),
-                    ),
+                  ItemCard(
+                    size: size.width * 4 / 10,
+                    linkphoto: "https://picsum.photos/id/0/5616/3744",
+                    titletext: "Laptop High Specs",
+                    price: "USD 1400",
                   ),
-                  Container(
-                    width: size.width * 4 / 10,
-                    margin: EdgeInsets.only(left: 20, right: 16),
-                    child: Column(
-                      children: [
-                        Image.network("https://picsum.photos/id/0/5616/3744"),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Macbook",
-                                style: TextStyle(
-                                    color: textColor,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
-                              ),
-                              Text(
-                                "USD 200",
-                                style: TextStyle(
-                                  color: anotherColor,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1),
-                    ),
+                  ItemCard(
+                    size: size.width * 4 / 10,
+                    linkphoto: "https://picsum.photos/id/1025/4951/3301",
+                    titletext: "Pets Blanket",
+                    price: "USD 12",
                   ),
                 ],
               ),
@@ -253,12 +173,24 @@ class HomePage extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
-                  Text(
-                    "see more",
-                    style: TextStyle(
-                      color: textColorSmall,
-                      fontSize: 14,
+                  InkWell(
+                    child: Text(
+                      "see more",
+                      style: TextStyle(
+                        color: textColorSmall,
+                        fontSize: 14,
+                      ),
                     ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return browsepage("Popular Item");
+                          },
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
@@ -267,116 +199,23 @@ class HomePage extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Container(
-                    width: size.width * 4 / 10,
-                    margin: EdgeInsets.only(left: 20, right: 16),
-                    child: Column(
-                      children: [
-                        Image.network("https://picsum.photos/id/1020/4288/2848"),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Macbook",
-                                style: TextStyle(
-                                    color: textColor,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
-                              ),
-                              Text(
-                                "USD 200",
-                                style: TextStyle(
-                                  color: anotherColor,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1),
-                    ),
+                  ItemCard(
+                    size: size.width * 4 / 10,
+                    linkphoto: "https://picsum.photos/id/1020/4288/2848",
+                    titletext: "Kuma Photograph",
+                    price: "USD 200",
                   ),
-                  Container(
-                    width: size.width * 4 / 10,
-                    margin: EdgeInsets.only(left: 20, right: 16),
-                    child: Column(
-                      children: [
-                        Image.network("https://picsum.photos/id/0/5616/3744"),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Macbook",
-                                style: TextStyle(
-                                    color: textColor,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
-                              ),
-                              Text(
-                                "USD 200",
-                                style: TextStyle(
-                                  color: anotherColor,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1),
-                    ),
+                  ItemCard(
+                    size: size.width * 4 / 10,
+                    linkphoto: "https://picsum.photos/id/0/5616/3744",
+                    titletext: "Laptop High Specs",
+                    price: "USD 1400",
                   ),
-                  Container(
-                    width: size.width * 4 / 10,
-                    margin: EdgeInsets.only(left: 20, right: 16),
-                    child: Column(
-                      children: [
-                        Image.network("https://picsum.photos/id/0/5616/3744"),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Macbook",
-                                style: TextStyle(
-                                    color: textColor,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16),
-                              ),
-                              Text(
-                                "USD 200",
-                                style: TextStyle(
-                                  color: anotherColor,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1),
-                    ),
+                  ItemCard(
+                    size: size.width * 4 / 10,
+                    linkphoto: "https://picsum.photos/id/1025/4951/3301",
+                    titletext: "Pets Blanket",
+                    price: "USD 12",
                   ),
                 ],
               ),
@@ -393,6 +232,63 @@ class HomePage extends StatelessWidget {
       leading: Icon(Icons.menu, color: textColor),
       elevation: 0,
       backgroundColor: Colors.white,
+    );
+  }
+}
+
+class ItemCard extends StatelessWidget {
+  const ItemCard(
+      {Key? key,
+      required this.size,
+      required this.linkphoto,
+      required this.titletext,
+      required this.price})
+      : super(key: key);
+
+  final double size;
+  final String linkphoto;
+  final String titletext;
+  final String price;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size,
+      margin: EdgeInsets.only(left: 20, right: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.network(linkphoto),
+          Container(
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+            child: Column(
+              children: [
+                Text(
+                  titletext,
+                  style: TextStyle(
+                      color: textColor,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16),
+                ),
+                SizedBox(height: 6),
+                Text(
+                  price,
+                  style: TextStyle(
+                    color: anotherColor,
+                    fontWeight: FontWeight.w600,
+                  ),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+      decoration: BoxDecoration(
+        border: Border.all(width: 1),
+      ),
     );
   }
 }
