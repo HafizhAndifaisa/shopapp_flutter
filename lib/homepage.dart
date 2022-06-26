@@ -126,7 +126,7 @@ class HomePage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return browsepage("Today's Item");
+                            return BrowsePage("Today's Item");
                           },
                         ),
                       );
@@ -186,7 +186,7 @@ class HomePage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return browsepage("Popular Item");
+                            return BrowsePage("Popular Item");
                           },
                         ),
                       );
@@ -273,7 +273,7 @@ class ItemCard extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 16),
                 ),
-                SizedBox(height: 6),
+                // SizedBox(height: 6),
                 Text(
                   price,
                   style: TextStyle(

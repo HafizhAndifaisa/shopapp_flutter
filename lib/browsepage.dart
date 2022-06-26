@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/homepage.dart';
 
-class browsepage extends StatelessWidget {
-  browsepage(this.title);
+class BrowsePage extends StatelessWidget {
+  BrowsePage(this.title);
 
   String title;
 
@@ -37,6 +37,7 @@ class browsepage extends StatelessWidget {
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing: 24,
+                  childAspectRatio: 0.9,
                 ),
                 children: <Widget>[
                   ItemCard(

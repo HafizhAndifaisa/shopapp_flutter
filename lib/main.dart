@@ -46,8 +46,8 @@ class _HomeAppState extends State<HomeApp> {
       body: widgetlist[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "User"),
+          const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          const BottomNavigationBarItem(icon: Icon(Icons.person), label: "User"),
         ],
         currentIndex: currentIndex,
         backgroundColor: Colors.black87,
